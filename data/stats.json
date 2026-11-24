@@ -1,0 +1,75 @@
+{
+  "name": "Bharat Road Vision",
+  "generated": "2026-11-05",
+  "total_records": 1593,
+  "vehicle_images": 1562,
+  "scene_images": 31,
+  "balanced_core_images": 555,
+  "per_label_full": {
+    "bus": 910,
+    "two_wheeler": 457,
+    "auto_rickshaw": 136,
+    "hatchback": 21,
+    "lcv": 12,
+    "truck": 9,
+    "suv": 6,
+    "tractor": 5,
+    "e_rickshaw": 3,
+    "sedan": 3
+  },
+  "per_label_balanced_core": {
+    "bus": 180,
+    "two_wheeler": 180,
+    "auto_rickshaw": 136,
+    "hatchback": 21,
+    "lcv": 12,
+    "truck": 9,
+    "suv": 6,
+    "tractor": 5,
+    "sedan": 3,
+    "e_rickshaw": 3
+  },
+  "scenes": {
+    "scene_sign": 6,
+    "scene_toll": 5,
+    "scene_traffic": 6,
+    "scene_parking": 7,
+    "scene_intersection": 7
+  },
+  "splits": {
+    "train": 444,
+    "extra": 1007,
+    "val": 71,
+    "test": 71
+  },
+  "confidence_tiers": {
+    "A": 1558,
+    "B": 4,
+    "scene": 31
+  },
+  "shape_agreement_rate": 0.582,
+  "with_number_plate_visible": 11,
+  "low_light_images": 88,
+  "sources": {
+    "openverse": 291,
+    "commons": 1302
+  },
+  "licenses": {
+    "CC BY-SA 4.0": 608,
+    "CC BY-SA 3.0": 309,
+    "BY": 173,
+    "CC BY 3.0": 111,
+    "BY-SA": 97,
+    "CC BY-SA 2.0": 67,
+    "CC BY 4.0": 54,
+    "CC0": 50,
+    "CC BY 2.0": 35,
+    "GODL-India": 31,
+    "Public domain": 23,
+    "BY-2.0": 10,
+    "CC BY 2.5": 8,
+    "BY-SA-2.0": 8,
+    "CC BY 3.0 pl": 5
+  },
+  "annotation": "code/annotate.py \u2014 saliency ROI proposals + hand-written geometric/colour rules + curated query/category prior. No third-party dataset was downloaded or copied; every label here was produced by this pipeline."
+}

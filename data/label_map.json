@@ -1,0 +1,186 @@
+{
+  "image_size": 512,
+  "total_records": 1593,
+  "labels": [
+    {
+      "id": 0,
+      "name": "two_wheeler",
+      "group": "vehicle",
+      "definition": "Motorcycle, scooter or moped \u2014 single-track vehicle, rider usually visible.",
+      "use_cases": [
+        "smart toll plaza classification",
+        "expressway rule enforcement",
+        "intersection vehicle counting"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "auto_rickshaw",
+      "group": "vehicle",
+      "definition": "Three-wheeled petrol/CNG auto rickshaw (tuk-tuk), yellow-black or green-yellow livery.",
+      "use_cases": [
+        "smart toll plaza classification",
+        "intersection vehicle counting",
+        "dynamic parking pricing"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "e_rickshaw",
+      "group": "vehicle",
+      "definition": "Battery-electric three-wheeler (e-rickshaw / e-cart), often green or blue canopy.",
+      "use_cases": [
+        "smart toll plaza classification",
+        "intersection vehicle counting",
+        "restricted-zone enforcement"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "hatchback",
+      "group": "vehicle",
+      "definition": "Small passenger car with rear hatch and short rear overhang (Swift/WagonR/i10 class).",
+      "use_cases": [
+        "smart toll plaza classification",
+        "dynamic parking pricing",
+        "on-device insurance verification"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "sedan",
+      "group": "vehicle",
+      "definition": "Four-door passenger car with a distinct boot (Dzire/City/Corolla class).",
+      "use_cases": [
+        "smart toll plaza classification",
+        "dynamic parking pricing",
+        "on-device insurance verification"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "suv",
+      "group": "vehicle",
+      "definition": "Tall utility passenger vehicle with high clearance (Scorpio/Fortuner/Innova/Creta class).",
+      "use_cases": [
+        "smart toll plaza classification",
+        "dynamic parking pricing",
+        "on-device insurance verification"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "lcv",
+      "group": "vehicle",
+      "definition": "Light commercial vehicle under ~3.5 t: mini-truck, pickup, tempo traveller or van (Tata Ace class).",
+      "use_cases": [
+        "smart toll plaza classification",
+        "fleet gate logging",
+        "dynamic parking pricing"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "bus",
+      "group": "vehicle",
+      "definition": "Passenger bus or coach \u2014 city, school, sleeper or minibus.",
+      "use_cases": [
+        "green-light prioritisation",
+        "intersection vehicle counting",
+        "fleet gate logging"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "truck",
+      "group": "vehicle",
+      "definition": "Goods truck, lorry, dumper or multi-axle trailer \u2014 cargo body or tipper.",
+      "use_cases": [
+        "smart toll plaza classification",
+        "fleet gate logging",
+        "city-zone entry enforcement"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "tractor",
+      "group": "vehicle",
+      "definition": "Agricultural tractor, with or without trolley; restricted on national highways.",
+      "use_cases": [
+        "fleet gate logging",
+        "rural road monitoring"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "scene_toll",
+      "group": "scene",
+      "definition": "Toll plaza / boom-barrier checkpoint with vehicles queued or passing.",
+      "use_cases": [
+        "toll plaza deployment"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "scene_intersection",
+      "group": "scene",
+      "definition": "Signalised or unsignalised intersection with mixed traffic.",
+      "use_cases": [
+        "signal optimisation"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "scene_traffic",
+      "group": "scene",
+      "definition": "Road or highway traffic scene showing mixed Indian vehicle flow.",
+      "use_cases": [
+        "congestion estimation"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "scene_yard",
+      "group": "scene",
+      "definition": "Industrial, warehouse, factory or construction yard entry with commercial vehicles.",
+      "use_cases": []
+    },
+    {
+      "id": 14,
+      "name": "scene_parking",
+      "group": "scene",
+      "definition": "Parking area or lot with parked vehicles.",
+      "use_cases": [
+        "parking occupancy analysis"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "scene_sign",
+      "group": "scene",
+      "definition": "Road sign, marking or regulatory signage relevant to enforcement.",
+      "use_cases": [
+        "rule enforcement"
+      ]
+    }
+  ],
+  "fields": {
+    "id": "stable content hash of the 512px crop",
+    "image": "relative path under images/",
+    "label": "target class",
+    "caption": "instruction-style sentence ending in the answer",
+    "confidence": "annotation confidence 0-1",
+    "confidence_tier": "A (>=0.55), B (0.40-0.55), C (<0.40)",
+    "shape_agreement": "True when geometric rules corroborate the label",
+    "rank": "top-4 rule scores at annotation time",
+    "bbox_norm": "object box in ORIGINAL frame normalised [x0,y0,x1,y1]",
+    "features": "aspect, edge density, flatness, colour shares, wheel/plate/people counts",
+    "in_balanced_core": "member of the class-balanced training core",
+    "class_weight": "inverse-frequency weight for balanced training on the full set",
+    "split": "train | val | test | extra | scene",
+    "license": "upstream licence",
+    "attribution": "upstream author",
+    "source_page": "human-verifiable page",
+    "original_url": "direct image URL"
+  }
+}
